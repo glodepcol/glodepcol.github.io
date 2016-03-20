@@ -366,9 +366,8 @@ ul {
 
 #finpagina {
     clear: both;
-    position: relative;
+    position: inline;
     color: white;
-    z-index: 10;
     height: 40px;
     margin-top: -3em;
     text-align: center;
@@ -396,6 +395,18 @@ ul {
 
     .navegacion{
     	position: inline;
+    }
+
+    .navegacion li a {
+      font-size: 0;
+      padding-right: 0px;
+      padding: 0;
+      margin: 10;
+      font-size: 75%;
+    }
+
+    .navegacion li {
+      padding-right: 30px;
     }
 }
 

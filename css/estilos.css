@@ -364,6 +364,17 @@ ul {
 
 /****************/
 
+#finpagina {
+    clear: both;
+    position: relative;
+    color: white;
+    z-index: 10;
+    height: 40px;
+    margin-top: -3em;
+    text-align: center;
+    background-color: #009bcc;
+}
+
 @media screen and (max-width: 480px) {
 
     .bloque{

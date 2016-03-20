@@ -181,7 +181,7 @@ ul {
 .contenedor {
 	margin:0 auto;
 	overflow:hidden;
-	width:960px;
+	width:400px;
 	position: relative;
 	z-index: -1;
 }
@@ -394,7 +394,7 @@ ul {
     }
 
     .navegacion{
-    	position: inline;
+    	position: static;
     }
 
     .navegacion li a {
@@ -407,6 +407,14 @@ ul {
 
     .navegacion li {
       padding-right: 30px;
+    }
+
+    .bloque {
+      width: 100%;
+    }
+
+    #finpagina {
+      width: 480px;
     }
 }
 

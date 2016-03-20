@@ -1,0 +1,87 @@
+<!--
+    Autor: Carlos Gómez
+    Carrera: Ingeniería de Sistemas y Computación
+    Institución: Universidad Nacional de Colombia
+    Asignatura: Gráfica Interactiva
+-->
+<!doctype html>
+<html>
+    <head>
+        <!-- Se le indica al archivo la ubicación de los estilos -->
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <!-- Se usa el formato de codificación UTF-8 para que reconozca ciertos simbolos -->
+        <meta charset="UTF-8">
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/png" href="images/png/ball.png"/>
+        <title> Momentos deportivos </title>
+        <!--
+            <slink rel="stylesheet"  href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+    </head>
+    <body>
+        <!-- Iconos tomados de http://www.flaticon.com/categories/sports/2 -->
+        <nav class="navegacion">
+            <div id = "titulo">
+                <img src="images/png/titulo.png">
+            </div>
+            <ul>
+                <li><a class = "active" href="index.html">Inicio</a></li>
+                <li><a href="ciclismo.html">Ciclismo</a></li>
+                <li><a href="futbol.html">Futbol</a></li>
+                <li><a href="atletismo.html"><i class="fa fa-cog fa-fw"></i> Atletismo</a></li>
+                <li><a href="otros.html">Otros</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Se crean bloques para realizar una pagina web con responsive -->
+        <div class = "grupo">
+            <div class = "bloque">
+                <div class = "redondear">
+                    <img src="images/nairo.jpg" />
+                </div>
+                <hr>
+                <h2>Nairo Quintana</h2>
+                <hr>
+                <p>Ciclista de Boyacá. Campeón del Giro de Italia en 2014, y subcampeon del Tour en 2013 y 2015. <a href = "ciclismo.html">Ver más</a></p>
+                <br>
+                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/-GwdNyHo7EQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="bloque">
+                <h2>Lorem ipsum</h2>
+                <p>Este es un cuadro de ejemplo</p>
+                <p>Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem, vis mutat affert percipit cu, eirmod consectetuer signiferumque eu per. In usu latine equidem dolores. Quo no falli viris intellegam, ut fugit veritus placerat per.</p>
+            </div>
+            <!-- REVISAR -->
+            <div class="contenedor">
+                <div id="presentacion">  <!-- Slider container -->
+                <div id="mask">  <!-- Mask -->
+                <ul>
+                    <li id="first" class="firstanimation">  <!-- ID for tooltip and class for animation -->
+                    <a href="ciclismo.html"> <img src="images/nairoQ.jpg" alt="Nairo"/> </a>
+                    <div class="tooltip"> <h1>Nairo</h1> </div>
+                </li>
+                <li id="second" class="secondanimation">
+                    <a href="#"> <img src="images/ibarguen.jpg" alt="Caterine Ibarguen"/> </a>
+                    <div class="tooltip"> <h1>Catherine Ibarguen</h1> </div>
+                </li>
+                <li id="third" class="thirdanimation">
+                    <a href="#"> <img src="images/pajon.jpg" alt="Mariana Pajon"/> </a>
+                    <div class="tooltip"> <h1>Mariana Pajon</h1> </div>
+                </li>
+                <li id="fourth" class="fourthanimation">
+                    <a href="#"> <img src="images/duque.jpg" alt="Orlando Duque"/> </a>
+                    <div class="tooltip"> <h1>Orlando Duque</h1> </div>
+                </li>
+                <li id="fifth" class="fifthanimation">
+                    <a href="#"> <img src="images/seleccion.jpg" alt="Seleccion Colombia"/> </a>
+                    <div class="tooltip"> <h1>Seleccion Colombia</h1> </div>
+                </li>
+            </ul>
+            </div>  <!-- End Mask -->
+            <div class="progress-bar"></div>  <!-- Progress Bar -->
+            </div>  <!-- End Slider Container -->
+        </div>
+    </div>
+</body>
+</html>

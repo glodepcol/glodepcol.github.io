@@ -5,21 +5,26 @@
 	Este archivo contiene los estilos que se usaran en mi pagina web para mostrar el contenido
 */
 
+@charset "UTF-8";
+
+
 /* Elimina las margenes por defecto del navegador */
 * {
 	margin:0;
 	padding:0;
 }
 
-/*  Se crea un identificador (es unico) que contiene el titulo de la pagina*/
+/*  Se crea un identificador (es unico) que contiene el titulo de la pagina
+    Tiene de alto 70pixeles, se indica que los elementos estaran alineados verticalmente
+    en la mitad. */
 #titulo{
 	align: center;
 	background-color: #009bcc;
 	height: 70px;
 	vertical-align: middle;
-	line-height: 70px;
 }
 
+/* Aquí se indica que cuando se tenga un atributo imagen se adapte al tamaño de la seccion titulo */
 #titulo img{
 	height: 70px;
 	width: auto;
@@ -104,7 +109,9 @@ p {
 
 /* Grupo de bloques en la pagina */
 .grupo {
-	margin-top: 180px;
+	margin-top: 200px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 /*
@@ -117,7 +124,7 @@ p {
 	margin: 10px;
 	padding: 10px;
 	width: 25%;
-	height: 25%;
+	height: auto;
 	/*background: url(../images/png/transparencia.png) repeat;*/
 	/*border: 1px solid write;*/
 }
@@ -145,6 +152,12 @@ p {
     margin: 40px;
 
 }
+
+
+#acercade {
+  float: right;
+}
+
 
 .navegacion li a:hover:not(.active) {
     background-color: #111;
@@ -190,7 +203,7 @@ ul {
    background: #000;
    border: 5px solid #eaeaea;
    box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
-   height: 480px;
+   height: 400px;
    width: 320px;
    /*margin-top: 180px;*/
    /*left: 120px;*/
@@ -202,7 +215,7 @@ ul {
 
 #mask {
    overflow: hidden;
-   height: 480px;
+   height: 400px;
 }
 
 /* IMAGE LIST */
@@ -368,10 +381,11 @@ ul {
     clear: both;
     position: inline;
     color: white;
-    height: 40px;
-    margin-top: -3em;
     text-align: center;
     background-color: #009bcc;
+    height: 70px;
+    right: 0;
+    left: 0;
 }
 
 @media screen and (max-width: 480px) {
@@ -416,5 +430,20 @@ ul {
     #finpagina {
       width: 480px;
     }
+
+    #acercade {
+      float: left;
+    }
 }
 
+
+@media screen and (max-height: 480px) {
+   .navegacion{
+      position: static;
+    }
+
+    .grupo{
+      margin-top: 0;
+    }
+
+}

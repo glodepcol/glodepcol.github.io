@@ -127,6 +127,10 @@ p {
 
 }
 
+.encabezado{
+  text-align: center;
+}
+
 /*
 	- width Me permite adaptar el contenido de la pagina al 100% de su tamaño
 	******* Buscar realizar responsive *******s
@@ -136,7 +140,7 @@ p {
 	float: left;
 	margin: 10px;
 	padding: 10px;
-	width: 400px;
+	width: 380px;
 	height: auto;
   text-align: justify;
 	/*background: url(../images/png/transparencia.png) repeat;*/
@@ -147,6 +151,7 @@ p {
 	float: left;
 	margin: 10px;
 	padding: 10px;
+  text-align: justify;
 	/*background: url(../images/png/transparencia.png) repeat;*/
 }
 

@@ -203,7 +203,7 @@ ul {
 .contenedor {
 	margin:0 auto;
 	overflow:hidden;
-	width:400px;
+	width:320px;
 	position: relative;
 	z-index: -1;
 }
@@ -403,6 +403,8 @@ ul {
 
     .grupo{
     	margin-top: 0;
+      margin-left: 15px;
+      margin-right: 15px;
     }
 
     .navegacion{
@@ -422,7 +424,7 @@ ul {
     }
 
     .bloque {
-      width: 100%;
+      width: 250px;
     }
 
     #finpagina {
@@ -431,6 +433,10 @@ ul {
 
     #acercade {
       float: left;
+    }
+
+    .contenedor {
+      width: 280px;
     }
 }
 

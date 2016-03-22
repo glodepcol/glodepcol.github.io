@@ -7,11 +7,13 @@
 
 @charset "UTF-8";
 
+/*Se importa una fuente del sitio Google Fonts*/
+@import url(https://fonts.googleapis.com/css?family=Exo+2:400,700,300,400italic);
+
 
 /* Elimina las margenes por defecto del navegador */
 * {
 	margin:0;
-	padding:0;
 }
 
 /*  Se crea un identificador (es unico) que contiene el titulo de la pagina
@@ -72,11 +74,15 @@
 	overflow: hidden;
     /*list-style-type: none;*/
     margin: 0;
+    /*margin: 0;*/
+    /*padding: 0;*/
     padding: 15px 20px;
     background-color: #0088b3;
 
 
 }
+
+
 
 .navegacion li a {
 	display: block;
@@ -98,12 +104,12 @@ hr {
 	La tipografia predeterminada es Segoe UI. Si el navegador no la 
 */
 h1, h2, h3, h4, a {
-	font-family: "Segoe UI", Helvetica, Verdana, sans-serif;
+	font-family: "Exo 2", Helvetica, Verdana, sans-serif;
 	color: #a9a9a9;
 }
 
 p {
-	font-family: "Segoe UI", Helvetica, Verdana, sans-serif;
+	font-family: "Exo 2", Helvetica, Verdana, sans-serif;
 	/*color: #cfcfcf;*/
 	color: #838383;
 }
@@ -125,12 +131,20 @@ p {
   right: 0;
   margin: 0;
   clear: both;
-    position: inline;
-    color: white;
-    text-align: center;
-    background-color: #009bcc;
-    height: 70px;
+  position: inline;
+  text-align: center;
+  text-decoration: none;
+  background-color: #009bcc;
+  height: 70px;
+}
 
+.fin p {
+  color: white;
+}
+
+.fin a {
+  color: white;
+  text-decoration: none;
 }
 
 .encabezado{
@@ -149,9 +163,12 @@ p {
 	padding: 10px;
 	width: 380px;
 	height: auto;
-  text-align: justify;
 	/*background: url(../images/png/transparencia.png) repeat;*/
 	/*border: 1px solid write;*/
+}
+
+.bloque p {
+  text-align: justify;
 }
 
 .ampliacion {
@@ -198,11 +215,7 @@ body {
 	background-color: #f5f5f5;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+
 
 
 /*****************************************************************/
@@ -216,8 +229,7 @@ ul {
 .contenedor {
 	margin:0 auto;
 	overflow:hidden;
-	width:320px;
-	position: relative;
+  position: relative;
 	z-index: -1;
 }
 

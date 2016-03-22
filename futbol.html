@@ -15,12 +15,13 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	</head>
 	<body>
-		<!-- Iconos tomados de http://www.flaticon.com/categories/sports/2 -->
 		<nav class="navegacion">
 			<div id = "titulo">
 				<img src="images/png/titulo.png">
 			</div>
 			<ul>
+				<!-- La pagina activa en este momento es la de futbol, y se ve reflejado en la barra de navegación -->
+				<!-- Se repite el mismo metodo en CICLISMO, OTROS, ACERCA DE y ATLETISMO. -->
 				<li><a href="index.html"><img src="https://maxcdn.icons8.com/Color/PNG/24/Very_Basic/home-24.png" title="Home" width="30"><br>Inicio</a></li>
 				<li><a href="ciclismo.html"><img src="https://maxcdn.icons8.com/Color/PNG/24/Sports/regular_biking-24.png" title="Regular Biking" width="30"><br>Ciclismo</a></li>
 				<li><a class = "active" href="futbol.html"><img src="https://maxcdn.icons8.com/Color/PNG/24/Sports/football_2-24.png" title="Football 2" width="30"><br>Futbol</a></li>
@@ -29,14 +30,17 @@
 				<li id="acercade"><a href="acerca.html"><img src="https://maxcdn.icons8.com/Color/PNG/24/Very_Basic/about-24.png" title="About" width="30"><br>Acerca de</a></li>
 			</ul>
 		</nav>
-		<!-- Se crean bloques para realizar una pagina web con responsive -->
+		<!-- Se crea una sección grupo, que esta conformada por tres bloques. Cada bloque contiene imagen, descripción y video inscrustado -->
 		<div class = "grupo">
 			<br>
+			<!-- Encabezado hace que hr y el texto esten centrados -->
 			<div class = "encabezado">
 				<hr>
 				<h2>Clubes campeones internacionales </h2>
 				<hr>
 			</div>
+			<!-- Los bloques aquí funcionan igual que en index -->
+			<!-- Cada bloque contiene una imagen, una descripción y un video incrustado. El video puede verse en la pagina -->
 			<div class = "bloque">
 				<div class = "redondear">
 					<img src="images/nacional.jpg" />
@@ -66,6 +70,8 @@
 				<iframe width="100%" height="auto" src="https://www.youtube.com/embed/m4fNyhcx6Ew" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
+		<!-- Otro grupo ubica una nueva sección debajo. Tiene el atributo clear en el css -->
+		<!-- los bloques funcionan igual. Grupo esta dividido en tres, que se ve en pantalla completa. En un dispositivo movil pasan a formar una columna -->
 		<div class = "otrogrupo">
 			<div class = "encabezado">
 				<hr>

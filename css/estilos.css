@@ -5,11 +5,15 @@
 	Este archivo contiene los estilos que se usaran en mi pagina web para mostrar el contenido
 */
 
+/*Se usa para que soporte caracteres Unicode*/
 @charset "UTF-8";
 
 /*Se importa una fuente del sitio Google Fonts*/
 @import url(https://fonts.googleapis.com/css?family=Exo+2:400,700,300,400italic);
 
+
+/* ****************** */
+/* TITULO Y MENU DE NAVEGACIÓN */
 
 /* Elimina las margenes por defecto del navegador */
 * {
@@ -32,76 +36,100 @@
 	width: auto;
 }
 
-/* Se crea un estilo para redondear */
-.redondear {
-    border-radius: 50%;
-    overflow: hidden;
-    height: 90%;
-    width: auto;
-    margin: 40px;
-    /*position: relative;*/
-}
 
-/* Para cada imagen le aplicara redondear */
-.redondear img {
-  display: inline;
-	width: 100%;
-	height: 100%;
-}
-
-/* Se indica el estilo de la barra de navegación */
+/* Se indica el estilo de la barra de navegación. Se ocultan los estilos de tipo de lista (esto es:; viñetas, por ejemplo) */
 /*Fixed nos permite dejar la barra fija al hacer scroll en la pagina*/
 .navegacion {
 	list-style-type: none;
-	overflow: hidden;
 	position: fixed;
 	text-align: center;
-	/*margin-top: 20px;*/
 	top: 0;
 	left: 0;
 	right: 0;
 }
 
+/*La separación de cada elemento del menu será de 50px a la derecha*/
 .navegacion li {
-	display: inline;
+  display: inline;
 	float: left;
 	padding-right: 50px;
-
 }
 
+/*  Overflow controla que la forma en que los elementos se comportan en su contenedor.
+    Se usa hidden para que esconda los elementos. */
 .navegacion ul {
-	align: center;
-	overflow: hidden;
-    /*list-style-type: none;*/
-    margin: 0;
-    /*margin: 0;*/
-    /*padding: 0;*/
-    padding: 15px 20px;
-    background-color: #0088b3;
-
-
+  align: center;
+  overflow: hidden;
+  margin: 0;
+  padding: 15px 20px;
+  background-color: #0088b3;
 }
 
-
-
+/*Alinea el texto de cada opción en el menú al centro y se muestra en bloque. 
+  Cada bloque se rellena con 25px en vertical y horizontal */
+/*Se anula la decoración; en este caso que no muestre el subrayado de enlace*/
 .navegacion li a {
-	display: block;
-    color: white;
-    text-align: center;
-    padding: 15px 20px;
-    text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 25px 25px;
+  text-decoration: none;
 }
 
-hr {
-    max-width: 350px;
-    border-color: #a9a9a9;
-      border-top: 20px;
-    text-align: center;
-    margin: 0 auto;
+/* Esto nos permite ver en la barra de navegación cual es la pagina activa. El color es un azul claro
+     y la fuente se mostrará en negrita. */
+.navegacion .active {
+    background-color: #c7f1ff;
+    color: #0088b3;
+    font-weight: bold;
 }
+
+/* Si no estan activos, pero si el mouse pasa encima de la opción, se coloreará negro*/
+.navegacion li a:hover:not(.active) {
+    background-color: #111;
+}
+
+/* Inidca que la opción del menu acerca de aparezca a la derecha de la pagina*/
+#acercade {
+  float: right;
+}
+
+
+/* ************** */
+/* PAGINA */
+
+/* Se crea un estilo para redondear.
+    border-raduis nos permite modificar el radio del borde. 50% nos servira para crear un circulo.
+    El tamaño es 90% para que no ocupe todo el tamaño. */
+.redondear {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 90%;
+  width: auto;
+  margin: 40px;
+  /*position: relative;*/
+}
+
+/* Para cada imagen le aplicara redondear. Inline dice que solo ocupara el espacio dado en el bloque
+   donde se usara. Se muestra la imagen en tamaño completo. */
+.redondear img {
+  display: inline;
+  width: 100%;
+  height: 100%;
+}
+
+/*Se crea una linea de separación con tamaño fijo de 350px.*/
+hr {
+  max-width: 350px;
+  border-color: #a9a9a9;
+  border-top: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
 /*
 	Se define el tipo de letra predeterminado para cada etiqueta que involucra texto.
-	La tipografia predeterminada es Segoe UI. Si el navegador no la 
+	La tipografia predeterminada es Exo 2. Si el navegador no la admite buscará Helvetica, y así.
 */
 h1, h2, h3, h4, a {
 	font-family: "Exo 2", Helvetica, Verdana, sans-serif;
@@ -110,121 +138,61 @@ h1, h2, h3, h4, a {
 
 p {
 	font-family: "Exo 2", Helvetica, Verdana, sans-serif;
-	/*color: #cfcfcf;*/
 	color: #838383;
 }
 
-/* Grupo de bloques en la pagina */
+/* Grupo de bloques en la pagina. Con margin-top le indico que se ubique a 200px del inicio de la pantalla.
+   Esto se realiza con el fin de que no se muestre encima de la barra de navegación */
 .grupo {
 	margin-top: 200px;
   margin-left: 30px;
   margin-right: 30px;
 }
 
+/* Se realiza como una nueva sección en la pagina*/
 .grupo2 {
   margin-left: 30px;
   margin-right: 30px;
+  margin-top: 0;
 }
 
-.fin {
-  left: 0;
-  right: 0;
-  margin: 0;
-  clear: both;
-  position: inline;
-  text-align: center;
-  text-decoration: none;
-  background-color: #009bcc;
-  height: 70px;
-}
-
-.fin p {
-  color: white;
-}
-
-.fin a {
-  color: white;
-  text-decoration: none;
-}
-
+/* Se crea para indicar el titulo dentro del bloque grupo*/
 .encabezado{
   text-align: center;
   position: inline;
 }
 
-/*
-	- width Me permite adaptar el contenido de la pagina al 100% de su tamaño
-	******* Buscar realizar responsive *******s
-*/
-
+/*Bloque representa la división en grupo en zonas de 3. Tiene ancho fijo, el height si es auto.*/
 .bloque{
 	float: left;
 	margin: 10px;
 	padding: 10px;
 	width: 380px;
 	height: auto;
-	/*background: url(../images/png/transparencia.png) repeat;*/
-	/*border: 1px solid write;*/
 }
 
+/* Indica que el texto de los parrafos se justifique. */
 .bloque p {
   text-align: justify;
 }
 
-.ampliacion {
-	float: left;
-	margin: 10px;
-	padding: 10px;
-  text-align: justify;
-	/*background: url(../images/png/transparencia.png) repeat;*/
-}
-
-.ampliacion p {
-	color: #cfcfcf;
-}
-
-.ampliacion .redondear{
-	border-radius: 3%;
-    overflow: hidden;
-    height: 30%;
-    width: auto;
-    margin: 40px;
-
-}
-
-
-#acercade {
-  float: right;
-}
-
-
-.navegacion li a:hover:not(.active) {
-    background-color: #111;
-}
-
-.navegacion .active {
-    background-color: #c7f1ff;
-    list-style-image: url(../images/png/man.png);
-    color: #0088b3;
-    font-weight: bold;
-}
-
-
+/*El color de fondo de la pagina será blanco*/
 body {
-	/* width:100%; */
 	background-color: #f5f5f5;
 }
 
-
-
-
 /*****************************************************************/
-/* presentacion STRUCTURE */
+/* PRESENTACION */
 
-/* La presentacion de imagenes se adapto del ejemplo dado en 
+/* La presentacion de imagenes se tomó del ejemplo dado en 
 	https://www.smashingmagazine.com/2012/04/pure-css3-cycling-slideshow/
-
+  La intencion es formar una lista con las imagenes. Se mueven en la pantalla,
+  pero se ocultan las que no están en el recuadro.
 	*/
+
+/*Si la imagen sobresale del bloque lo esconde (hidden).*/
+/* Con z-index -1 se envia al fondo para que no interfiera con otros elementos de la pagina */
+/*Se hace con el objetivo de contener las imagenes presentes en la presentacion*/
 
 .contenedor {
 	margin:0 auto;
@@ -233,38 +201,34 @@ body {
 	z-index: -1;
 }
 
+/* Se fija el tamaño del bloque y se fija una posición relativa*/
 #presentacion {
-   background: #000;
    border: 5px solid #eaeaea;
-   box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
    height: 400px;
    width: 320px;
-   /*margin-top: 180px;*/
-   /*left: 120px;*/
-   overflow: visible;
+   left: 20px;
    position: relative;
 }
 
-/* HIDE ALL OUTSIDE OF THE presentacion */
+/* Esconde las imagenes de la presentación */
 
 #mask {
    overflow: hidden;
    height: 400px;
 }
 
-/* IMAGE LIST */
-
+/*El contenedor es una lista de HTML*/
 #presentacion ul {
    margin: 0;
    padding: 0;
    position: relative;
 }
 
+/*Cada elemento de la lista es una imagen*/
 #presentacion li {
-   width: 480px;  /* Width Image */
-   height: 480px; /* Height Image */
+   width: 480px;  
+   height: 480px;
    position: absolute;
-   top: -480px; /* Original Position - Outside of the presentacion */
    list-style: none;
 }
 
@@ -289,26 +253,30 @@ body {
 }
 
 /* ANIMATION */
+/* Se usa @keyframes para especificar el codigo de animación.*/
+/* la imagen se mantiene durante  tres segundos, el codigo especifica cuando entra y sale
+   y se ve en la animación durante un segundo. Las imagenes estan ordenadas. En total son 5.*/
+
 
 @keyframes cycle {
-   0%  { top: 0px; } /* When you start the slide, the first image is already visible */
-   4%  { top: 0px; } /* Original Position */
-   16% { top: 0px; opacity:1; z-index:0; } /* From 4% to 16 % = for 3 seconds the image is visible */
-   20% { top: 325px; opacity: 0; z-index: 0; } /* From 16% to 20% = for 1 second exit image */
-   21% { top: -325px; opacity: 0; z-index: -1; } /* Return to Original Position */
+   0%  { top: 0px; } /* Primera imagen visible al iniciar presentación */
+   4%  { top: 0px; } /* Posicion original de la imagen */
+   16% { top: 0px; opacity:1; z-index:0; } /* Imagen visible por 3 segundos */
+   20% { top: 325px; opacity: 0; z-index: 0; } /* Sale la imagen durante un segundo */
+   21% { top: -325px; opacity: 0; z-index: -1; } /* regresa a la posición original */
    92% { top: -325px; opacity: 0; z-index: 0; }
-   96% { top: -325px; opacity: 0; } /* From 96% to 100% = for 1 second enter image*/
+   96% { top: -325px; opacity: 0; } /* Espera que el resto pase. Entra para realizar presentacion*/
    100%{ top: 0px; opacity: 1; }
 }
 
 @keyframes cycletwo {
-   0%  { top: -325px; opacity: 0; } /* Original Position */
-   16% { top: -325px; opacity: 0; }/* Starts moving after 16% to this position */
+   0%  { top: -325px; opacity: 0; } /* Posicion original, esta por fuera de la presentacion */
+   16% { top: -325px; opacity: 0; }/* Se mueve a esa posición */
    20% { top: 0px; opacity: 1; }
-   24% { top: 0px; opacity: 1; }  /* From 20% to 24% = for 1 second enter image*/
-   36% { top: 0px; opacity: 1; z-index: 0; }   /* From 24% to 36 % = for 3 seconds the image is visible */
-   40% { top: 325px; opacity: 0; z-index: 0; } /* From 36% to 40% = for 1 second exit image */
-   41% { top: -325px; opacity: 0; z-index: -1; }   /* Return to Original Position */
+   24% { top: 0px; opacity: 1; }  /* Entra imagen al recuadro*/
+   36% { top: 0px; opacity: 1; z-index: 0; }   /* La imagen es visible por 3 segundos */
+   40% { top: 325px; opacity: 0; z-index: 0; } /* Sale imagen durante un segundo */
+   41% { top: -325px; opacity: 0; z-index: -1; }   /* Vuelve a la posición original */
    100%{ top: -325px; opacity: 0; z-index: -1; }
 }
 
@@ -342,7 +310,7 @@ body {
    100%{ top: 325px; opacity: 0; z-index: 0; }
 }
 /* PROGRESS BAR */
-
+/* La clase muestra una animación con la barra de progreso, que espera 3 segundos*/
 .progress-bar {
    position: inline;
    top: -5px;
@@ -410,6 +378,36 @@ body {
 }
 
 /****************/
+/* FIN DE PAGINA */
+
+/* Fin es mi "footer" - Pie de pagina. Con clear le indico que se ubique debajo de todo elemento
+  que este a izquierda y a derecha. Se alinea el texto al centro y sin decoración */
+.fin {
+  left: 0;
+  right: 0;
+  margin: 0;
+  clear: both;
+  position: block;
+  text-align: center;
+  text-decoration: none;
+  background-color: #009bcc;
+  height: 70px;
+}
+
+/* En el fin de pagina, el color del texto es blanco*/
+.fin p {
+  color: white;
+}
+
+/*Los enlaces estarán sin decoración en el fin de pagina*/
+.fin a {
+  color: white;
+  text-decoration: none;
+}
+
+/**************************/
+/* PAGINA EN PANTALLA MENOR A 480px DE ANCHO */
+
 
 @media screen and (max-width: 480px) {
 

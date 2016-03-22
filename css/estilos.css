@@ -156,6 +156,13 @@ p {
   margin-top: 0;
 }
 
+.otrogrupo {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 0;
+  clear: both;
+}
+
 /* Se crea para indicar el titulo dentro del bloque grupo*/
 .encabezado{
   text-align: center;

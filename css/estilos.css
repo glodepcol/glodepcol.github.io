@@ -149,6 +149,7 @@ p {
   margin-right: 30px;
 }
 
+
 /* Se realiza como una nueva sección en la pagina*/
 .grupo2 {
   margin-left: 30px;
@@ -389,6 +390,15 @@ body {
 
 /* Fin es mi "footer" - Pie de pagina. Con clear le indico que se ubique debajo de todo elemento
   que este a izquierda y a derecha. Se alinea el texto al centro y sin decoración */
+
+#sitemap {
+  height: 100%;
+  width: 100%;
+  margin: 0px auto;
+  left: 20px;
+  right: 20px;
+}
+
 .fin {
   left: 0;
   right: 0;

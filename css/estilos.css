@@ -1,6 +1,6 @@
 /*
 	Archivo:  estilos.css
-	Autor: Carlos Gómez;
+	Autor: Carlos Gomez;
 	------------------------
 	Este archivo contiene los estilos que se usaran en mi pagina web para mostrar el contenido
 */
@@ -13,7 +13,7 @@
 
 
 /* ****************** */
-/* TITULO Y MENU DE NAVEGACIÓN */
+/* TITULO Y MENU DE NAVEGACIoN */
 
 /* Elimina las margenes por defecto del navegador */
 * {
@@ -30,14 +30,14 @@
 	vertical-align: middle;
 }
 
-/* Aquí se indica que cuando se tenga un atributo imagen se adapte al tamaño de la seccion titulo */
+/* Aqui se indica que cuando se tenga un atributo imagen se adapte al tamaño de la seccion titulo */
 #titulo img{
 	height: 70px;
 	width: auto;
 }
 
 
-/* Se indica el estilo de la barra de navegación. Se ocultan los estilos de tipo de lista (esto es:; viñetas, por ejemplo) */
+/* Se indica el estilo de la barra de navegacion. Se ocultan los estilos de tipo de lista (esto es:; viñetas, por ejemplo) */
 /*Fixed nos permite dejar la barra fija al hacer scroll en la pagina*/
 .navegacion {
 	list-style-type: none;
@@ -48,7 +48,7 @@
 	right: 0;
 }
 
-/*La separación de cada elemento del menu será de 50px a la derecha*/
+/*La separacion de cada elemento del menu sera de 50px a la derecha*/
 .navegacion li {
   display: inline;
 	float: left;
@@ -65,9 +65,9 @@
   background-color: #0088b3;
 }
 
-/*Alinea el texto de cada opción en el menú al centro y se muestra en bloque. 
+/*Alinea el texto de cada opcion en el menu al centro y se muestra en bloque. 
   Cada bloque se rellena con 25px en vertical y horizontal */
-/*Se anula la decoración; en este caso que no muestre el subrayado de enlace*/
+/*Se anula la decoracion; en este caso que no muestre el subrayado de enlace*/
 .navegacion li a {
   display: block;
   color: white;
@@ -76,20 +76,20 @@
   text-decoration: none;
 }
 
-/* Esto nos permite ver en la barra de navegación cual es la pagina activa. El color es un azul claro
-     y la fuente se mostrará en negrita. */
+/* Esto nos permite ver en la barra de navegacion cual es la pagina activa. El color es un azul claro
+     y la fuente se mostrara en negrita. */
 .navegacion .active {
     background-color: #c7f1ff;
     color: #0088b3;
     font-weight: bold;
 }
 
-/* Si no estan activos, pero si el mouse pasa encima de la opción, se coloreará negro*/
+/* Si no estan activos, pero si el mouse pasa encima de la opcion, se coloreara negro*/
 .navegacion li a:hover:not(.active) {
     background-color: #111;
 }
 
-/* Inidca que la opción del menu acerca de aparezca a la derecha de la pagina*/
+/* Inidca que la opcion del menu acerca de aparezca a la derecha de la pagina*/
 #acercade {
   float: right;
 }
@@ -118,7 +118,7 @@
   height: 100%;
 }
 
-/*Se crea una linea de separación con tamaño fijo de 350px.*/
+/*Se crea una linea de separacion con tamaño fijo de 350px.*/
 hr {
   max-width: 350px;
   border-color: #a9a9a9;
@@ -129,7 +129,7 @@ hr {
 
 /*
 	Se define el tipo de letra predeterminado para cada etiqueta que involucra texto.
-	La tipografia predeterminada es Exo 2. Si el navegador no la admite buscará Helvetica, y así.
+	La tipografia predeterminada es Exo 2. Si el navegador no la admite buscara Helvetica, y asi.
 */
 h1, h2, h3, h4, a {
 	font-family: "Exo 2", Helvetica, Verdana, sans-serif;
@@ -142,7 +142,7 @@ p {
 }
 
 /* Grupo de bloques en la pagina. Con margin-top le indico que se ubique a 200px del inicio de la pantalla.
-   Esto se realiza con el fin de que no se muestre encima de la barra de navegación */
+   Esto se realiza con el fin de que no se muestre encima de la barra de navegacion */
 .grupo {
 	margin-top: 200px;
   margin-left: 30px;
@@ -150,7 +150,7 @@ p {
 }
 
 
-/* Se realiza como una nueva sección en la pagina*/
+/* Se realiza como una nueva seccion en la pagina*/
 .grupo2 {
   margin-left: 30px;
   margin-right: 30px;
@@ -170,7 +170,7 @@ p {
   position: inline;
 }
 
-/*Bloque representa la división en grupo en zonas de 3. Tiene ancho fijo, el height si es auto.*/
+/*Bloque representa la division en grupo en zonas de 3. Tiene ancho fijo, el height si es auto.*/
 .bloque{
 	float: left;
 	margin: 10px;
@@ -184,7 +184,7 @@ p {
   text-align: justify;
 }
 
-/*El color de fondo de la pagina será blanco*/
+/*El color de fondo de la pagina sera blanco*/
 body {
 	background-color: #f5f5f5;
 }
@@ -192,10 +192,10 @@ body {
 /*****************************************************************/
 /* PRESENTACION */
 
-/* La presentacion de imagenes se tomó del ejemplo dado en 
+/* La presentacion de imagenes se tomo del ejemplo dado en 
 	https://www.smashingmagazine.com/2012/04/pure-css3-cycling-slideshow/
   La intencion es formar una lista con las imagenes. Se mueven en la pantalla,
-  pero se ocultan las que no están en el recuadro.
+  pero se ocultan las que no estan en el recuadro.
 	*/
 
 /*Si la imagen sobresale del bloque lo esconde (hidden).*/
@@ -209,7 +209,7 @@ body {
 	z-index: -1;
 }
 
-/* Se fija el tamaño del bloque y se fija una posición relativa*/
+/* Se fija el tamaño del bloque y se fija una posicion relativa*/
 #presentacion {
    border: 5px solid #eaeaea;
    height: 400px;
@@ -218,7 +218,7 @@ body {
    position: relative;
 }
 
-/* Esconde las imagenes de la presentación */
+/* Esconde las imagenes de la presentacion */
 
 #mask {
    overflow: hidden;
@@ -240,6 +240,7 @@ body {
    list-style: none;
 }
 
+/*  Determina el tiempo de la animacion para cada elemento de la lista */
 #presentacion li.firstanimation {
    animation: cycle 25s linear infinite;
 }
@@ -260,19 +261,19 @@ body {
    animation: cyclefive 25s linear infinite;
 }
 
-/* ANIMATION */
-/* Se usa @keyframes para especificar el codigo de animación.*/
+/* ANIMACION */
+/* Se usa @keyframes para especificar el codigo de animacion.*/
 /* la imagen se mantiene durante  tres segundos, el codigo especifica cuando entra y sale
-   y se ve en la animación durante un segundo. Las imagenes estan ordenadas. En total son 5.*/
+   y se ve en la animacion durante un segundo. Las imagenes estan ordenadas. En total son 5.*/
 
 
 
 @keyframes cycle {
-   0%  { top: 0px; } /* Primera imagen visible al iniciar presentación */
+   0%  { top: 0px; } /* Primera imagen visible al iniciar presentacion */
    4%  { top: 0px; } /* Posicion original de la imagen */
    16% { top: 0px; opacity:1; z-index:0; } /* Imagen visible por 3 segundos */
    20% { top: 325px; opacity: 0; z-index: 0; } /* Sale la imagen durante un segundo */
-   21% { top: -325px; opacity: 0; z-index: -1; } /* regresa a la posición original */
+   21% { top: -325px; opacity: 0; z-index: -1; } /* regresa a la posicion original */
    92% { top: -325px; opacity: 0; z-index: 0; }
    96% { top: -325px; opacity: 0; } /* Espera que el resto pase. Entra para realizar presentacion*/
    100%{ top: 0px; opacity: 1; }
@@ -280,12 +281,12 @@ body {
 
 @keyframes cycletwo {
    0%  { top: -325px; opacity: 0; } /* Posicion original, esta por fuera de la presentacion */
-   16% { top: -325px; opacity: 0; }/* Se mueve a esa posición */
+   16% { top: -325px; opacity: 0; }/* Se mueve a esa posicion */
    20% { top: 0px; opacity: 1; }
    24% { top: 0px; opacity: 1; }  /* Entra imagen al recuadro*/
    36% { top: 0px; opacity: 1; z-index: 0; }   /* La imagen es visible por 3 segundos */
    40% { top: 325px; opacity: 0; z-index: 0; } /* Sale imagen durante un segundo */
-   41% { top: -325px; opacity: 0; z-index: -1; }   /* Vuelve a la posición original */
+   41% { top: -325px; opacity: 0; z-index: -1; }   /* Vuelve a la posicion original */
    100%{ top: -325px; opacity: 0; z-index: -1; }
 }
 
@@ -320,7 +321,7 @@ body {
 }
 
 
-/* La clase muestra una animación con la barra de progreso, que espera 3 segundos*/
+/* La clase muestra una animacion con la barra de progreso, que espera 3 segundos*/
 .progress-bar {
    position: inline;
    top: -5px;
@@ -331,7 +332,7 @@ body {
    animation: fullexpand 25s ease-out infinite;
 }
 
-/*Se muestra el progreso de la animación de la barra de progreso*/
+/*Se muestra el progreso de la animacion de la barra de progreso*/
 
 @keyframes fullexpand {
    /* Sin animarse */
@@ -369,31 +370,13 @@ body {
    padding: 0 0 0 10px;
 }
 
-#presentacion .tooltip {
-…
-   transition: all 0.3s ease-in-out;
-}
 
-/*Se presenta cuando la imagen aparece*/
-#presentacion li#first: hover .tooltip,
-#presentacion li#second: hover .tooltip,
-#presentacion li#third: hover .tooltip,
-#presentacion li#fourth: hover .tooltip,
-#presentacion li#fifth: hover .tooltip {
-   left: 0px;
-}
-
-/*Cuando el mouse pasa encima pausa la animación*/
-#presentacion: hover li,
-#presentacion: hover .progress-bar {
-   animation-play-state: paused;
-}
 
 /****************/
 /* FIN DE PAGINA */
 
 /* Fin es mi "footer" - Pie de pagina. Con clear le indico que se ubique debajo de todo elemento
-  que este a izquierda y a derecha. Se alinea el texto al centro y sin decoración */
+  que este a izquierda y a derecha. Se alinea el texto al centro y sin decoracion */
 
 .fin {
   left: 0;
@@ -413,7 +396,7 @@ body {
   color: white;
 }
 
-/*Los enlaces estarán sin decoración en el fin de pagina*/
+/*Los enlaces estaran sin decoracion en el fin de pagina*/
 .fin a {
   color: white;
   text-decoration: none;
@@ -433,15 +416,15 @@ body {
 
 @media screen and (max-width: 480px) {
 
-    /*Cada bloque pasa a formar una columa en una pantalla con esa resolución */
+    /*Cada bloque pasa a formar una columa en una pantalla con esa resolucion */
     .bloque{
     	width: 100%;
     	height: 100%
     	left:0;
     }
 
-    /* La barra de navegación no se quedará estatica, 
-    sino que se moverá con los demás elementos*/
+    /* La barra de navegacion no se quedara estatica, 
+    sino que se movera con los demas elementos*/
     .navegacion{
       position: static;
     }
@@ -466,7 +449,7 @@ body {
       padding-right: 30px;
     }
 
-    /* Como la barra de navegación se mueve con los demás elementos
+    /* Como la barra de navegacion se mueve con los demas elementos
     grupo no tiene un margin-top.*/
     .grupo{
     	margin-top: 0;
@@ -474,17 +457,17 @@ body {
       margin-right: 15px;
     }
 
-    /* Disminuyó el ancho del bloque para que se adapte más facil */
+    /* Disminuyo el ancho del bloque para que se adapte mas facil */
     .bloque {
       width: 280px;
     }
 
-    /* Se reune acerca de con el resto de los elementos de la lista de navegación*/
+    /* Se reune acerca de con el resto de los elementos de la lista de navegacion*/
     #acercade {
       float: left;
     }
 
-    /* Se reduce el contenedor de la presentación de imagenes*/
+    /* Se reduce el contenedor de la presentacion de imagenes*/
     .contenedor {
       width: 280px;
     }
@@ -493,12 +476,12 @@ body {
 
 /* Se realiza un par de adaptaciones cuando el alto de la pagina es maximo 460px*/
 @media screen and (max-height: 480px) {
-  /* La barra de navegación cambia a estatico*/
+  /* La barra de navegacion cambia a estatico*/
    .navegacion{
       position: static;
     }
 
-    /* Grupo cambia de margen, debido a la barra de navegación*/
+    /* Grupo cambia de margen, debido a la barra de navegacion*/
     .grupo{
       margin-top: 0;
     }
